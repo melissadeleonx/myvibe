@@ -1,0 +1,327 @@
+/* styles.css */
+
+@media (max-width: 767px) {
+    .rainbow-border {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Profile Section Styles */
+    .univvvID-container {
+        padding: 20px;
+        margin: auto;
+        background: linear-gradient(rgba(0, 31, 63, 0.7), rgba(0, 31, 63, 0.7)), url('https://raw.githubusercontent.com/melissadeleonx/uniVVV/main/galaxy-photo.png') center/cover;
+        border: 2px solid yellow;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        height: auto;
+    }
+
+    .id-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px !important;
+    }
+
+    .id-photo img {
+        width: 100%;
+        max-width: 150px;
+        border-radius: 50%;
+        border: 4px solid #fff;
+    }
+
+    .univvvID-container h2 {
+        color: #ffff00;
+        margin-top: 10px;
+    }
+
+    .id-details p {
+        color: #ffff00;
+        margin: 4px 0;
+        font-size: 14px !important;
+    }
+
+    .qr-code {
+        position: relative;
+        margin-top: 20px;
+    }
+
+    .id-number {
+        color: #fff;
+        font-size: 16px;
+        font-family: 'Courier New', monospace;
+        margin-top: 10px;
+    }
+
+    .qr-icon {
+        display: none;
+    }
+
+    .id-buttons {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        color: black;
+        border: none;
+        padding: 8px 16px;
+        cursor: pointer;
+    }
+
+}
+
+@media print {
+    .id-buttons {
+        display: none;
+    }
+}
+
+/* Global Styles */
+
+.brand-logo {
+    max-width: 50px;
+    margin-right: 10px;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #000;
+    color: #fff;
+}
+
+body.dark-mode .custom-th {
+    color: #fff;
+}
+
+/* Light Mode */
+body.light-mode {
+    background-color: #fff;
+    color: #000;
+}
+
+nav.navbar {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+/* Connecting Galaxies effect */
+.text-shine:hover {
+    background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 200% 200%;
+    animation: rainbowShine 3s linear infinite;
+  }
+
+  @keyframes rainbowShine {
+    0% {
+      background-position: 200% 50%;
+    }
+    100% {
+      background-position: -100% 50%;
+    }
+  }
+
+
+/* No text decoration on anchor links */
+footer a {
+    text-decoration: none;
+
+}
+
+
+/* About Section Styles */
+/* h1 text effect */
+.rainbow-text {
+    font-size: 3em;
+    background-image: linear-gradient(45deg, #ff0000, #ff8000, #ffff00, #80ff00, #00ff80, #0080ff, #0000ff, #8000ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 200% 200%;
+    animation: rainbow 8s linear infinite;
+}
+
+@keyframes rainbow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.nav-underline .nav-link {
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-underline .nav-link:hover,
+.nav-underline .nav-link:focus {
+    border-bottom: 2px solid currentColor;
+}
+
+/* Youtube Border effect */
+.rainbow-border {
+    display: inline-block;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    border: 2px solid transparent;
+    animation: rainbowBorder 8s linear infinite;
+}
+
+@keyframes rainbowBorder {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.rainbow-border:hover {
+    border-color: #fff;
+}
+
+.rounded-border {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+}
+
+/* CS50 duck hover */
+.hover-container a {
+    text-decoration: none;
+}
+
+.hover-container {
+    position: relative;
+    display: inline-block;
+}
+
+.hover-content {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.hover-container:hover .hover-content {
+    visibility: visible;
+    opacity: 1;
+}
+
+.medium-image {
+    max-width: 100%;
+    height: auto;
+    max-height: 250px;
+}
+
+.font-size-xl {
+    font-size: 4rem;
+}
+
+.learn-more {
+    display: inline-block;
+    color: red;
+    text-decoration: none;
+    transition: font-size 0.3s ease, margin-left 0.3s ease;
+}
+
+.learn-more:hover {
+    font-size: 110%;
+    margin-left: 5px;
+}
+
+/* Profile ID Section Styles */
+.univvvID-container {
+    padding: 20px;
+    margin: auto;
+    background: linear-gradient(rgba(0, 31, 63, 0.7), rgba(0, 31, 63, 0.7)), url('https://raw.githubusercontent.com/melissadeleonx/uniVVV/main/galaxy-photo.png') center/cover;
+    border: 2px solid yellow;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 400px;
+}
+
+.id-card {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+    align-items: center;
+    text-align: left;
+}
+
+.id-photo img {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+}
+
+.univvvID-container h2 {
+    color: #ffff00;
+}
+
+.id-details p {
+    color: #ffff00;
+    margin: 4px 0;
+    font-size: 20px;
+}
+
+
+.qr-code {
+    position: absolute;
+    bottom: 50px;
+    right: 90px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
+
+.id-number {
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Courier New', monospace;
+    margin-top: auto;
+}
+
+.qr-icon {
+    width: 120px;
+    height: 120px;
+    filter: brightness(0) invert(1);
+
+}
+
+.id-buttons {
+    position: absolute;
+    top: 145px;
+    right: 90px;
+    color: black;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+/* Profile BIO Section Styles */
+.univvvbio-container {
+    padding: 20px;
+    margin: auto;
+    border: 2px solid yellow;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 1000px;
+}

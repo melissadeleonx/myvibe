@@ -1,0 +1,13 @@
+Ideas to add later - voting system for each planets to choose someone as head of council - monetary and honor rewards
+Apply to migrate to a different planet - free for 3 times then after that one need to wait for 30 days, later we can make a simple task for them to make it happen
+The website will always be free.
+
+Screen Mode - Light/Dark/Mood Modes
+            Mood is what the user choose as overallmood
+            Currently Light and Dark Mode is working but it is not retaining its current mode when pages are changed
+
+Email Registration - Address the registration email to be sent to the user who registered
+                - Integrate logging or signing up with GMAIL - twitter- facebook
+                - use flask mail or OAuth email for security
+
+Profile - special url for each user

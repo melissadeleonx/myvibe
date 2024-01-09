@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+        <header>
+            <h1 class="text-center">
+                <span class="display-1 fw-bold">uniVVV</span><br>
+                <a href="/about" class="small text-shine" data-text="Connecting Galaxies &rarr;">Connecting Galaxies &rarr;</a>
+            </h1>
+        </header>
+    <div class="my-4">
+        <form action="/login" method="post">
+            <div class="mb-3">
+                <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="username_email" name="username_email" placeholder="Username or Email" type="text" required>
+            </div>
+            <div class="mb-3">
+                <input class="form-control mx-auto w-auto" id="password" name="password" placeholder="Password" type="password" required>
+            </div>
+            <button class="btn btn-primary" type="submit">Log In</button>
+        </form>
+    </div>
+{% endblock %}

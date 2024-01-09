@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Profile
+{% endblock %}
+
+{% block main %}
+    <div class="container univvvID-container">
+        <h2 class="text-center">CAPTAIN MELISSA</h2>
+        <h6 class="text-center text-muted">uniVVV Galactic Citizen Profile</h6>
+        <div class="id-buttons">
+            <button class="edit-button">Edit</button>
+            <button class="print-button">Print ID</button>
+        </div>
+        <div class="id-card row">
+            <div class="id-photo text-center">
+                <img src="https://raw.githubusercontent.com/melissadeleonx/uniVVV/main/profile-photo.png" alt="ID Photo" class="img-fluid rounded-circle">
+            </div>
+            <div class="id-details">
+                <p><strong>Alias:</strong> melissadeleonx</p>
+                <p><strong>Species:</strong> Humanoid</p>
+                <p><strong>Planet:</strong> Earth</p>
+                <p><strong>Language:</strong> English</p>
+                <p><strong>Occupation:</strong> Starship Captain</p>
+                <p><strong>Quote of the Day:</strong> "To boldly go where no one has gone before!"</p>
+                <div class="qr-code">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/qr-code.png" alt="QR Code" class="qr-icon">
+                    <span class="id-number">ID NUMBER: UGC-123456</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container univvvbio-container mt-4">
+
+    </div>
+
+{% endblock %}
